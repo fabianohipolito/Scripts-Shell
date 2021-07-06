@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/fabianohipolito/Repositório/Scripts
+cd /home/fabianohipolito/Repositorio/Scripts
 openvpn --config client.ovpn
 
 
