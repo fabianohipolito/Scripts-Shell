@@ -1,6 +1,5 @@
 #!/bin/bash
 
-apt-get upgrade -y
 cd /home/fabianohipolito
 mkdir Repositório
 
@@ -16,7 +15,7 @@ apt-get install vagrant -y
 apt-get install git -y
 apt-get install gpg -y
 apt-get install openssh-server -y
-
+apt install terminator -y
 
 #Instalação do Ansile
 echo deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main >> /etc/apt/sources.list
@@ -63,6 +62,7 @@ apt-key adv --keyserver hkp://pool.sks-keyservers.net:80 --recv-keys 7EA0A9C3F27
 apt update -y
 apt install docker-ce -y
 
+#Instalação do Workspaces
 wget https://d3nt0h4h6pmmc4.cloudfront.net/workspacesclient_amd64.deb
 dpkg -i workspacesclient_amd64.deb
 rm -rf workspacesclient_amd64.deb
